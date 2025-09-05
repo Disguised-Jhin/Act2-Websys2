@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const orderData = require('../../data/orders')
-const orderController = require('./orders-controller')
+const customerController = require('../controllers')
 
 router.get('/', (req, res) => {
     
@@ -19,5 +19,6 @@ router.get('/', (req, res) => {
 
     res.send(result)
 })
+
 
 module.exports = router;
