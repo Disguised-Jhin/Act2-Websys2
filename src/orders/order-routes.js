@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const orderData = require('../../data/orders')
-const customerController = require('../controllers')
+const orderController = require('../controllers')
 
 router.get('/', (req, res) => {
     
