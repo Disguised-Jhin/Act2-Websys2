@@ -1,24 +1,24 @@
-function filtName(data, nameQuery) {
+function filterName(data, nameQuery) {
     return data.filter(product => product.name.toLowerCase().includes(nameQuery.toLowerCase()))
 }
 
-function filtDescription(data, descriptionQuery) {
+function filterDescription(data, descriptionQuery) {
     return data.filter(product => product.desc.toLowerCase().includes(descriptionQuery.toLowerCase()))
 }
 
-function filtPriceRange(data, lowerValue, upperValue) {
+function filterPriceRange(data, lowerValue, upperValue) {
     return data.filter(product => product.price >= lowerValue && product.price <= upperValue)
 }
 
-function filtStockRange(data, lowerValue, upperValue) {
+function filterStockRange(data, lowerValue, upperValue) {
     return data.filter(product => product.stock >= lowerValue && product.stock <= upperValue)
 }
 
-function filtStatus(data, status){
+function filterStatus(data, status){
     return data.filter(order => order.status = status)
 }
 
-function filtTotalAmount(data, total) {
+function filterTotalAmount(data, total) {
     return data.filter(order => order.total)
 }
 
@@ -31,12 +31,12 @@ function filterTotalAmount(data, total) {
 }
 
 module.exports = {
-    filtName, 
-    filtDescription,
-    filtPriceRange,
-    filtStockRange,
-    filtStatus,
-    filtTotalAmount,
+    filterName, 
+    filterDescription,
+    filterPriceRange,
+    filterStockRange,
+    filterStatus,
+    filterTotalAmount,
     filterStatus,
     filterTotalAmount
 }
